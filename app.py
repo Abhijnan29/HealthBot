@@ -7,8 +7,7 @@ app = Flask(__name__)
 
 app.secret_key ='bdc556f280795c3fbeeceec6c1371403e130cfef785cbd02ba648f3a10ff3c75'
 
-# Set up OpenAI API credentials
-# openai.api_key = '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'
+
 
 # Sample product data (you can replace this with a database)
 products = [
