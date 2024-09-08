@@ -42,12 +42,12 @@
           <li><a href="/home">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
-          <li><a href="#medicines">Medicine Shop</a></li>
           <li><a href="#Doctor">Doctor Consultation</a></li>
-          <!--<li><a  href="/logout">{{ session['email']}}</a></li>-->
+          <li><a href="/cart">Cart</a></li>
+          <li><a href="/logout">{{ session['email']}}</a></li>
           <li class="dropdown">
             <!-- <a href="javascript:void(0);" class="dropbtn">{{ session['email']}}</a> -->
-            <a href="javascript:void(0);" class="dropbtn">abc@gmail.com</a>
+            <!-- <a href="javascript:void(0);" class="dropbtn">abc@gmail.com</a>-->
             <div class="dropdown-content">
               <a href="/my_acc">My Account</a>
               <a href="/logout">Logout</a>
@@ -99,7 +99,7 @@
       </li>
       {% endfor %}
     </ul>
-    <a href="/cart">View Cart</a>
+    <!--<a href="/cart">View Cart</a>-->
 
     <script>
       function addToCart(productId) {
