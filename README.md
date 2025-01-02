@@ -45,7 +45,7 @@ Every doctor has different sections for treatment, here HealthGPT+ provides suit
 <h4>6>pip install pylint</h4>
 <h4>7>python app.py</h4>
 
-# After run the website you need to login to see the home page of the website so you use the email as "abc@gmail.com" and password  as "abc123".
+# After run the website you need to login to see the home page of the website so you use the email as "abc@mail.com" and password  as "abc123".
 
 # Language: 
 	Python, Javascript
