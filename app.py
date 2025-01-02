@@ -1,6 +1,6 @@
 from datetime import timedelta
 from flask import Flask, render_template, request, redirect, jsonify,url_for, session
-import mysql.connector
+# import mysql.connector
 # import openai
 #from passlib.hash import sha256_crypt
 app = Flask(__name__)
@@ -27,12 +27,12 @@ cart = []
 
 
 # MySQL database configuration
-db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Admin",
-    database="hospitallogin"
-)
+# db = mysql.connector.connect(
+#     host="localhost",
+#     user="root",
+#     password="Admin",
+#     database="hospitallogin"
+# )
 
 @app.route('/')
 @app.route('/login')
@@ -84,15 +84,15 @@ def submit():
     #encpassword=sha256_crypt.hash(password)
 
     # Insert data into the database
-    cursor = db.cursor()
-    query = "INSERT INTO reg (firstname,lastname,email,phonenumber,address,password) VALUES (%s, %s, %s, %s, %s, %s)"
-    values = (firstname,lastname,email,phonenumber,address,password)
-    cursor.execute(query, values)
-    db.commit()
+    # cursor = db.cursor()
+    # query = "INSERT INTO reg (firstname,lastname,email,phonenumber,address,password) VALUES (%s, %s, %s, %s, %s, %s)"
+    # values = (firstname,lastname,email,phonenumber,address,password)
+    # cursor.execute(query, values)
+    # db.commit()
 
     # Optionally, you can close the database connection after the insertion
-    cursor.close()
-    db.close()
+    # cursor.close()
+    # db.close()
    
     msg= 'Data inserted Successfully'
     #return "Data inserted Successfully"
