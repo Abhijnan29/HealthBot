@@ -45,21 +45,27 @@ def log():
         email = request.form['login-email']
         password = request.form['login-password']
         
-        cursor = db.cursor(dictionary=True)
-        cursor.execute('SELECT email,password FROM reg WHERE email = %s AND password = %s', (email, password ))
-        account = cursor.fetchone()
-        if account:
-            session['loggedin'] = True
-           # session['id'] = account['id']
-            session['email'] = account['email']
-            session['password'] = account['password']
-            msg2= 'Logged in Successfully'
-            #return 'Logged in successfully !'
-            return render_template('home.html',msg2=msg2)
+        if(email=="abc@gmail.com" and password=="abc123"):
+            return render_template('home.html')
         else:
-            msg2 = 'Incorrect username / password !'
-            #return 'Incorrect username / password !'
-            return render_template('login.html', msg2=msg2)
+            return render_template('login.html') 
+        
+        # cursor = db.cursor(dictionary=True)
+        # cursor.execute('SELECT email,password FROM reg WHERE email = %s AND password = %s', (email, password ))
+        # account = cursor.fetchone()
+        
+        # if account:
+        #     session['loggedin'] = True
+        #    # session['id'] = account['id']
+        #     session['email'] = account['email']
+        #     session['password'] = account['password']
+            #  msg2= 'Logged in Successfully'
+            #return 'Logged in successfully !'
+            # return render_template('home.html',msg2=msg2)
+            # else:
+            #     msg2 = 'Incorrect username / password !'
+            #     #return 'Incorrect username / password !'
+            #     return render_template('login.html', msg2=msg2)
 
 @app.route('/logout')
 def logout():
