@@ -37,13 +37,13 @@ Every doctor has different sections for treatment, here HealthGPT+ provides suit
 
 
   # Steps to run the project in codespaces
-<h4>1>python --version(If it doesn't install then install it first)</h4>
+<!--<h4>1>python --version(If it doesn't install then install it first)</h4>
 <h4>2>pip install virtualenv</h4>
-<h4>3>virtualenv venv</h4>
-<h4>4>python -m pip install flask</h4>
+<h4>3>virtualenv venv</h4>-->
+<h4>1>python -m pip install flask</h4>
 <!-- <h4>5>pip install mysql-connector-python</h4> -->
-<h4>6>pip install pylint</h4>
-<h4>7>python app.py</h4>
+<!--<h4>6>pip install pylint</h4>-->
+<h4>2>python app.py</h4>
 
 # After run the website you need to login to see the home page of the website so you use the email as "abc@mail.com" and password  as "abc123".
 
