@@ -45,7 +45,7 @@ def log():
         email = request.form['login-email']
         password = request.form['login-password']
         
-        if(email=="abc@gmail.com" and password=="abc123"):
+        if(email=="abc@mail.com" and password=="abc123"):
             return render_template('home.html')
         else:
             return render_template('login.html') 
